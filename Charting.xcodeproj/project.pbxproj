@@ -13,6 +13,9 @@
 		F6CF40B520172CAE00642F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40B320172CAE00642F9A /* Main.storyboard */; };
 		F6CF40B720172CAE00642F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40B620172CAE00642F9A /* Assets.xcassets */; };
 		F6CF40BA20172CAE00642F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40B820172CAE00642F9A /* LaunchScreen.storyboard */; };
+		F6CF40C52017337D00642F9A /* Tables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40C42017337D00642F9A /* Tables.storyboard */; };
+		F6CF40C82017342300642F9A /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40C72017342300642F9A /* Board.storyboard */; };
+		F6CF40CB20173B9600642F9A /* CTNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CF40CA20173B9600642F9A /* CTNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		F6CF40B620172CAE00642F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6CF40B920172CAE00642F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6CF40BB20172CAE00642F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6CF40C42017337D00642F9A /* Tables.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tables.storyboard; sourceTree = "<group>"; };
+		F6CF40C72017342300642F9A /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
+		F6CF40CA20173B9600642F9A /* CTNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNavigationViewController.swift; sourceTree = "<group>"; };
 		FA9E4A06462E243E01DE3D6C /* Pods_Charting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,12 +86,31 @@
 			children = (
 				F6CF40AF20172CAE00642F9A /* AppDelegate.swift */,
 				F6CF40B120172CAE00642F9A /* ViewController.swift */,
+				F6CF40CA20173B9600642F9A /* CTNavigationViewController.swift */,
+				F6CF40C6201733CD00642F9A /* Tables */,
+				F6CF40C92017342B00642F9A /* Board */,
 				F6CF40B320172CAE00642F9A /* Main.storyboard */,
 				F6CF40B620172CAE00642F9A /* Assets.xcassets */,
 				F6CF40B820172CAE00642F9A /* LaunchScreen.storyboard */,
 				F6CF40BB20172CAE00642F9A /* Info.plist */,
 			);
 			path = Charting;
+			sourceTree = "<group>";
+		};
+		F6CF40C6201733CD00642F9A /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				F6CF40C42017337D00642F9A /* Tables.storyboard */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		F6CF40C92017342B00642F9A /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				F6CF40C72017342300642F9A /* Board.storyboard */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CF40BA20172CAE00642F9A /* LaunchScreen.storyboard in Resources */,
+				F6CF40C82017342300642F9A /* Board.storyboard in Resources */,
 				F6CF40B720172CAE00642F9A /* Assets.xcassets in Resources */,
 				F6CF40B520172CAE00642F9A /* Main.storyboard in Resources */,
+				F6CF40C52017337D00642F9A /* Tables.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,10 +228,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Charting/Pods-Charting-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -231,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CF40CB20173B9600642F9A /* CTNavigationViewController.swift in Sources */,
 				F6CF40B220172CAE00642F9A /* ViewController.swift in Sources */,
 				F6CF40B020172CAE00642F9A /* AppDelegate.swift in Sources */,
 			);
