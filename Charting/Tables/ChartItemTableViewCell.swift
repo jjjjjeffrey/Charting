@@ -1,5 +1,5 @@
 //
-//  GroupTableViewCell.swift
+//  ItemTableViewCell.swift
 //  Charting
 //
 //  Created by daqian zeng on 2018/2/10.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupTableViewCell: UITableViewCell {
+class ChartItemTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,10 +20,9 @@ class GroupTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func configure(for group: ChartGroup) {
-        textLabel?.text = group.name
-        detailTextLabel?.text = group.createDate.string(for: .yyyyMMddHHmmss)
-    }
 
+    func configure(for item: ChartItem) {
+        textLabel?.text = item.name
+        detailTextLabel?.text = item.createDate.string(for: .yyyyMMddHHmmss)
+    }
 }

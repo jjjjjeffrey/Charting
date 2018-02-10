@@ -1,5 +1,5 @@
 //
-//  CreateGroupViewController.swift
+//  CreateItemViewController.swift
 //  Charting
 //
 //  Created by daqian zeng on 2018/2/10.
@@ -9,13 +9,19 @@
 import UIKit
 import NotificationBannerSwift
 
-class CreateGroupViewController: UITableViewController {
+class CreateChartItemViewController: UITableViewController {
+    
+    var group: ChartGroup!
 
     @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,15 +35,15 @@ class CreateGroupViewController: UITableViewController {
         }
         self.managedObjectContext.performChanges {
             do {
-                let group = try ChartGroup.insert(into: self.managedObjectContext, groupName: name)
-                let banner = NotificationBanner(title: "\(group.name)分组创建成功", subtitle: nil, style: .success)
+                let item = try ChartItem.insert(into: self.managedObjectContext, itemName: name, group: self.group)
+                let banner = NotificationBanner(title: "\(item.name)数据集创建成功", subtitle: nil, style: .success)
                 banner.duration = 1.0
                 banner.show()
                 self.navigationController?.popViewController(animated: true)
             } catch {
                 if case ManagedObjectError.objectExist(let object) = error {
-                    if let group = object as? ChartGroup {
-                        let banner = NotificationBanner(title: "\(group.name)分组已存在", subtitle: "请重新输入分组名称", style: .danger)
+                    if let item = object as? ChartItem {
+                        let banner = NotificationBanner(title: "\(item.name)数据集已存在", subtitle: "请重新输入数据集名称", style: .danger)
                         banner.duration = 1.0
                         banner.show()
                     }
@@ -45,7 +51,8 @@ class CreateGroupViewController: UITableViewController {
             }
         }
     }
-    
+
+
     /*
     // MARK: - Navigation
 
@@ -58,7 +65,7 @@ class CreateGroupViewController: UITableViewController {
 
 }
 
-extension CreateGroupViewController: UITextFieldDelegate {
+extension CreateChartItemViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

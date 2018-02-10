@@ -30,7 +30,7 @@
         <!--Groups-->
         <scene sceneID="fRG-RC-xKy">
             <objects>
-                <viewController id="0tJ-6c-weN" customClass="GroupsViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0tJ-6c-weN" customClass="ChartGroupsViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTh-JI-rr2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GroupTableViewCell" textLabel="6u3-aQ-pLY" detailTextLabel="wML-uN-gmi" style="IBUITableViewCellStyleValue1" id="WUg-ho-b8R" customClass="GroupTableViewCell" customModule="Charting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GroupTableViewCell" textLabel="6u3-aQ-pLY" detailTextLabel="wML-uN-gmi" style="IBUITableViewCellStyleValue1" id="WUg-ho-b8R" customClass="ChartGroupTableViewCell" customModule="Charting" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WUg-ho-b8R" id="8X2-2O-OBj">
@@ -97,7 +97,7 @@
         <!--分组名称-->
         <scene sceneID="g9F-Ji-ctN">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="zwh-BL-Wg1" customClass="ItemsViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="zwh-BL-Wg1" customClass="ChartItemsViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wP3-Mn-dNy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemTableViewCell" textLabel="q4e-0s-JCd" detailTextLabel="Sq0-6J-Nmg" style="IBUITableViewCellStyleValue1" id="net-QU-tc3" customClass="ItemTableViewCell" customModule="Charting" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemTableViewCell" textLabel="q4e-0s-JCd" detailTextLabel="Sq0-6J-Nmg" style="IBUITableViewCellStyleValue1" id="net-QU-tc3" customClass="ChartItemTableViewCell" customModule="Charting" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="net-QU-tc3" id="fA8-0t-odw">
@@ -160,7 +160,7 @@
         <!--创建数据集-->
         <scene sceneID="IOB-8L-VV2">
             <objects>
-                <tableViewController id="sxe-Pl-lDK" customClass="CreateItemViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="sxe-Pl-lDK" customClass="CreateChartItemViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZbH-Lg-dpw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
         <!--创建分组-->
         <scene sceneID="gVN-Vi-dng">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="aZg-Jk-bR7" customClass="CreateGroupViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="aZg-Jk-bR7" customClass="CreateChartGroupViewController" customModule="Charting" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="P3V-5M-HmI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

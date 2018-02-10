@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class GroupsViewController: UIViewController {
+class ChartGroupsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,7 +27,7 @@ class GroupsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate var dataSource: TableViewDataSource<GroupsViewController>!
+    fileprivate var dataSource: TableViewDataSource<ChartGroupsViewController>!
     
     fileprivate func setupTableView() {
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -43,7 +43,7 @@ class GroupsViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? ItemsViewController {
+        if let vc = segue.destination as? ChartItemsViewController {
             if let group = dataSource.selectedObject {
                 vc.group = group
             }
@@ -53,8 +53,8 @@ class GroupsViewController: UIViewController {
 
 }
 
-extension GroupsViewController: TableViewDataSourceDelegate {
-    func configure(_ cell: GroupTableViewCell, for object: ChartGroup) {
+extension ChartGroupsViewController: TableViewDataSourceDelegate {
+    func configure(_ cell: ChartGroupTableViewCell, for object: ChartGroup) {
         cell.configure(for: object)
     }
 }

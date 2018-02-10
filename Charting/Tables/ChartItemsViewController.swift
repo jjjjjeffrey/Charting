@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ItemsViewController: UIViewController {
+class ChartItemsViewController: UIViewController {
     
     var group: ChartGroup!
 
@@ -17,6 +17,7 @@ class ItemsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = group.name
         setupTableView()
     }
 
@@ -25,7 +26,7 @@ class ItemsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate var dataSource: TableViewDataSource<ItemsViewController>!
+    fileprivate var dataSource: TableViewDataSource<ChartItemsViewController>!
     
     fileprivate func setupTableView() {
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -42,7 +43,7 @@ class ItemsViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? CreateItemViewController {
+        if let vc = segue.destination as? CreateChartItemViewController {
             vc.group = group
         }
     }
@@ -50,8 +51,8 @@ class ItemsViewController: UIViewController {
 
 }
 
-extension ItemsViewController: TableViewDataSourceDelegate {
-    func configure(_ cell: ItemTableViewCell, for object: ChartItem) {
+extension ChartItemsViewController: TableViewDataSourceDelegate {
+    func configure(_ cell: ChartItemTableViewCell, for object: ChartItem) {
         cell.configure(for: object)
     }
 }

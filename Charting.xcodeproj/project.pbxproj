@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E3ECCFFF4B1DFE93362CF716 /* Pods_Charting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9E4A06462E243E01DE3D6C /* Pods_Charting.framework */; };
-		F657FEAA202EC2B10051FB6D /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */; };
-		F657FEAC202EDAE50051FB6D /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */; };
-		F657FEAE202EDAFE0051FB6D /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */; };
-		F657FEB0202EE9E00051FB6D /* CreateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */; };
+		F657FEAA202EC2B10051FB6D /* CreateChartGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEA9202EC2B10051FB6D /* CreateChartGroupViewController.swift */; };
+		F657FEAC202EDAE50051FB6D /* ChartItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAB202EDAE50051FB6D /* ChartItemsViewController.swift */; };
+		F657FEAE202EDAFE0051FB6D /* ChartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAD202EDAFE0051FB6D /* ChartItemTableViewCell.swift */; };
+		F657FEB0202EE9E00051FB6D /* CreateChartItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAF202EE9E00051FB6D /* CreateChartItemViewController.swift */; };
 		F67BC5CF202E975D008979E4 /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5CE202E975D008979E4 /* ChartItem.swift */; };
 		F67BC5D1202E9821008979E4 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D0202E9821008979E4 /* ChartCell.swift */; };
 		F67BC5D3202E9BC5008979E4 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D2202E9BC5008979E4 /* TableViewDataSource.swift */; };
-		F67BC5D5202EB7EB008979E4 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D4202EB7EB008979E4 /* GroupTableViewCell.swift */; };
+		F67BC5D5202EB7EB008979E4 /* ChartGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D4202EB7EB008979E4 /* ChartGroupTableViewCell.swift */; };
 		F69B48452022EB6400C26B1F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B48442022EB6400C26B1F /* CoreDataManager.swift */; };
 		F69B484F2022FD5400C26B1F /* ChartGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B484E2022FD5400C26B1F /* ChartGroup.swift */; };
 		F69B48512023032100C26B1F /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69B48502023032100C26B1F /* Managed.swift */; };
@@ -27,21 +27,21 @@
 		F6CF40C52017337D00642F9A /* Tables.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40C42017337D00642F9A /* Tables.storyboard */; };
 		F6CF40C82017342300642F9A /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6CF40C72017342300642F9A /* Board.storyboard */; };
 		F6CF40CB20173B9600642F9A /* CTNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CF40CA20173B9600642F9A /* CTNavigationViewController.swift */; };
-		F6CF40D32018716400642F9A /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CF40D22018716400642F9A /* GroupsViewController.swift */; };
+		F6CF40D32018716400642F9A /* ChartGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CF40D22018716400642F9A /* ChartGroupsViewController.swift */; };
 		F6CF40D62018741200642F9A /* Charting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6CF40D42018741200642F9A /* Charting.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3235259E641BF5FD5D279053 /* Pods-Charting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charting/Pods-Charting.debug.xcconfig"; sourceTree = "<group>"; };
 		40216C4DD7C5ACCA0195B23A /* Pods-Charting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charting.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charting/Pods-Charting.release.xcconfig"; sourceTree = "<group>"; };
-		F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
-		F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
-		F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemViewController.swift; sourceTree = "<group>"; };
+		F657FEA9202EC2B10051FB6D /* CreateChartGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChartGroupViewController.swift; sourceTree = "<group>"; };
+		F657FEAB202EDAE50051FB6D /* ChartItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItemsViewController.swift; sourceTree = "<group>"; };
+		F657FEAD202EDAFE0051FB6D /* ChartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItemTableViewCell.swift; sourceTree = "<group>"; };
+		F657FEAF202EE9E00051FB6D /* CreateChartItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChartItemViewController.swift; sourceTree = "<group>"; };
 		F67BC5CE202E975D008979E4 /* ChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
 		F67BC5D0202E9821008979E4 /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
 		F67BC5D2202E9BC5008979E4 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
-		F67BC5D4202EB7EB008979E4 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		F67BC5D4202EB7EB008979E4 /* ChartGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGroupTableViewCell.swift; sourceTree = "<group>"; };
 		F69B48442022EB6400C26B1F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F69B484E2022FD5400C26B1F /* ChartGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGroup.swift; sourceTree = "<group>"; };
 		F69B48502023032100C26B1F /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		F6CF40C42017337D00642F9A /* Tables.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tables.storyboard; sourceTree = "<group>"; };
 		F6CF40C72017342300642F9A /* Board.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
 		F6CF40CA20173B9600642F9A /* CTNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTNavigationViewController.swift; sourceTree = "<group>"; };
-		F6CF40D22018716400642F9A /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		F6CF40D22018716400642F9A /* ChartGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGroupsViewController.swift; sourceTree = "<group>"; };
 		F6CF40D52018741200642F9A /* Charting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Charting.xcdatamodel; sourceTree = "<group>"; };
 		FA9E4A06462E243E01DE3D6C /* Pods_Charting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,12 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				F6CF40C42017337D00642F9A /* Tables.storyboard */,
-				F6CF40D22018716400642F9A /* GroupsViewController.swift */,
-				F67BC5D4202EB7EB008979E4 /* GroupTableViewCell.swift */,
-				F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */,
-				F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */,
-				F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */,
-				F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */,
+				F6CF40D22018716400642F9A /* ChartGroupsViewController.swift */,
+				F67BC5D4202EB7EB008979E4 /* ChartGroupTableViewCell.swift */,
+				F657FEA9202EC2B10051FB6D /* CreateChartGroupViewController.swift */,
+				F657FEAB202EDAE50051FB6D /* ChartItemsViewController.swift */,
+				F657FEAD202EDAFE0051FB6D /* ChartItemTableViewCell.swift */,
+				F657FEAF202EE9E00051FB6D /* CreateChartItemViewController.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -316,17 +316,17 @@
 				F69B48452022EB6400C26B1F /* CoreDataManager.swift in Sources */,
 				F67BC5D3202E9BC5008979E4 /* TableViewDataSource.swift in Sources */,
 				F67BC5CF202E975D008979E4 /* ChartItem.swift in Sources */,
-				F67BC5D5202EB7EB008979E4 /* GroupTableViewCell.swift in Sources */,
+				F67BC5D5202EB7EB008979E4 /* ChartGroupTableViewCell.swift in Sources */,
 				F69B484F2022FD5400C26B1F /* ChartGroup.swift in Sources */,
-				F6CF40D32018716400642F9A /* GroupsViewController.swift in Sources */,
+				F6CF40D32018716400642F9A /* ChartGroupsViewController.swift in Sources */,
 				F6CF40CB20173B9600642F9A /* CTNavigationViewController.swift in Sources */,
-				F657FEAE202EDAFE0051FB6D /* ItemTableViewCell.swift in Sources */,
+				F657FEAE202EDAFE0051FB6D /* ChartItemTableViewCell.swift in Sources */,
 				F6CF40B220172CAE00642F9A /* ViewController.swift in Sources */,
-				F657FEAA202EC2B10051FB6D /* CreateGroupViewController.swift in Sources */,
+				F657FEAA202EC2B10051FB6D /* CreateChartGroupViewController.swift in Sources */,
 				F67BC5D1202E9821008979E4 /* ChartCell.swift in Sources */,
-				F657FEB0202EE9E00051FB6D /* CreateItemViewController.swift in Sources */,
+				F657FEB0202EE9E00051FB6D /* CreateChartItemViewController.swift in Sources */,
 				F69B48512023032100C26B1F /* Managed.swift in Sources */,
-				F657FEAC202EDAE50051FB6D /* ItemsViewController.swift in Sources */,
+				F657FEAC202EDAE50051FB6D /* ChartItemsViewController.swift in Sources */,
 				F6CF40D62018741200642F9A /* Charting.xcdatamodeld in Sources */,
 				F6CF40B020172CAE00642F9A /* AppDelegate.swift in Sources */,
 			);
