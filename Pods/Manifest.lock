@@ -2,16 +2,22 @@ PODS:
   - Charts (3.0.4):
     - Charts/Core (= 3.0.4)
   - Charts/Core (3.0.4)
-  - SwiftIconFont (2.7.2)
+  - MarqueeLabel/Swift (3.1.4)
+  - NotificationBannerSwift (1.6.1):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Charts (~> 3.0)
-  - SwiftIconFont (~> 2.0)
+  - NotificationBannerSwift (~> 1.0)
 
 SPEC CHECKSUMS:
   Charts: 0705898046257443f0afbbc3179f4b67507b6e48
-  SwiftIconFont: e13dc39c257121e1141375bb338c02e686ef410b
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  NotificationBannerSwift: 1fc2955381e6eb26d958ba32160fc41721b9b689
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 1cdee2af785f72e7517145664f211699deb36a51
+PODFILE CHECKSUM: 48f0b9405a84e1bdc5894eb274757a05d5177a7e
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

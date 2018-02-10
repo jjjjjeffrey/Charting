@@ -7,19 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+extension UIViewController {
+    var managedObjectContext: NSManagedObjectContext {
+        get {
+            return CoreDataManager.share.persistentContainer.viewContext
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

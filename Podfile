@@ -7,6 +7,6 @@ target 'Charting' do
 
   # Pods for Charting
   pod 'Charts', '~> 3.0'
-  pod 'SwiftIconFont', '~> 2.0'
+  pod 'NotificationBannerSwift', '~> 1.0'
 
 end
