@@ -1,25 +1,23 @@
 //
-//  GroupsViewController.swift
+//  ItemsViewController.swift
 //  Charting
 //
-//  Created by daqian zeng on 24/01/2018.
-//  Copyright © 2018 daqian zeng. All rights reserved.
+//  Created by daqian zeng on 2018/2/10.
+//  Copyright © 2018年 daqian zeng. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class GroupsViewController: UIViewController {
+class ItemsViewController: UIViewController {
+    
+    var group: ChartGroup!
 
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        CoreDataManager.initialize {
-            self.setupTableView()
-        }
-        
+        setupTableView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +25,16 @@ class GroupsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate var dataSource: TableViewDataSource<GroupsViewController>!
+    fileprivate var dataSource: TableViewDataSource<ItemsViewController>!
     
     fileprivate func setupTableView() {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
-        let request = ChartGroup.sortedFetchRequest
+        let predicate = NSPredicate(format: "group = %@", group)
+        let request = ChartItem.sortedFetchRequest(with: predicate)
         request.fetchBatchSize = 20
         let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataManager.share.persistentContainer.viewContext, sectionNameKeyPath: nil, cacheName: nil)
-        dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: "GroupTableViewCell", fetchedResultsController: frc, delegate: self)
+        dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: "ItemTableViewCell", fetchedResultsController: frc, delegate: self)
     }
 
     
@@ -43,18 +42,16 @@ class GroupsViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? ItemsViewController {
-            if let group = dataSource.selectedObject {
-                vc.group = group
-            }
+        if let vc = segue.destination as? CreateItemViewController {
+            vc.group = group
         }
     }
     
 
 }
 
-extension GroupsViewController: TableViewDataSourceDelegate {
-    func configure(_ cell: GroupTableViewCell, for object: ChartGroup) {
+extension ItemsViewController: TableViewDataSourceDelegate {
+    func configure(_ cell: ItemTableViewCell, for object: ChartItem) {
         cell.configure(for: object)
     }
 }

@@ -8,17 +8,17 @@
     <entity name="ChartGroup" representedClassName=".ChartGroup" syncable="YES">
         <attribute name="createDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartItem" inverseName="group" inverseEntity="ChartItem" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChartItem" inverseName="group" inverseEntity="ChartItem" syncable="YES"/>
     </entity>
     <entity name="ChartItem" representedClassName=".ChartItem" syncable="YES">
         <attribute name="createDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="cells" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartCell" inverseName="item" inverseEntity="ChartCell" syncable="YES"/>
-        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartGroup" inverseName="items" inverseEntity="ChartGroup" syncable="YES"/>
+        <relationship name="cells" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChartCell" inverseName="item" inverseEntity="ChartCell" syncable="YES"/>
+        <relationship name="group" maxCount="1" deletionRule="Nullify" destinationEntity="ChartGroup" inverseName="items" inverseEntity="ChartGroup" syncable="YES"/>
     </entity>
     <elements>
         <element name="ChartCell" positionX="504" positionY="27" width="128" height="90"/>
-        <element name="ChartGroup" positionX="-9" positionY="36" width="128" height="90"/>
+        <element name="ChartGroup" positionX="-9" positionY="36" width="128" height="88"/>
         <element name="ChartItem" positionX="243" positionY="21" width="128" height="103"/>
     </elements>
 </model>

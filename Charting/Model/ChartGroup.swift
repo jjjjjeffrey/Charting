@@ -23,6 +23,8 @@ class ChartGroup: NSManagedObject {
         }
         throw ManagedObjectError.objectExist(existGroup)
     }
+    
+    @NSManaged var items: Set<ChartItem>
 }
 
 extension ChartGroup: Managed {

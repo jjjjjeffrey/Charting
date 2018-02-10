@@ -24,6 +24,12 @@ extension Managed {
         request.sortDescriptors = defaultSortDescriptors
         return request
     }
+    
+    public static func sortedFetchRequest(with predicate: NSPredicate) -> NSFetchRequest<Self> {
+        let request = sortedFetchRequest
+        request.predicate = predicate
+        return request
+    }
 }
 
 

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E3ECCFFF4B1DFE93362CF716 /* Pods_Charting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9E4A06462E243E01DE3D6C /* Pods_Charting.framework */; };
 		F657FEAA202EC2B10051FB6D /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */; };
+		F657FEAC202EDAE50051FB6D /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */; };
+		F657FEAE202EDAFE0051FB6D /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */; };
+		F657FEB0202EE9E00051FB6D /* CreateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */; };
 		F67BC5CF202E975D008979E4 /* ChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5CE202E975D008979E4 /* ChartItem.swift */; };
 		F67BC5D1202E9821008979E4 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D0202E9821008979E4 /* ChartCell.swift */; };
 		F67BC5D3202E9BC5008979E4 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67BC5D2202E9BC5008979E4 /* TableViewDataSource.swift */; };
@@ -32,6 +35,9 @@
 		3235259E641BF5FD5D279053 /* Pods-Charting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charting/Pods-Charting.debug.xcconfig"; sourceTree = "<group>"; };
 		40216C4DD7C5ACCA0195B23A /* Pods-Charting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charting.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charting/Pods-Charting.release.xcconfig"; sourceTree = "<group>"; };
 		F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemViewController.swift; sourceTree = "<group>"; };
 		F67BC5CE202E975D008979E4 /* ChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartItem.swift; sourceTree = "<group>"; };
 		F67BC5D0202E9821008979E4 /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
 		F67BC5D2202E9BC5008979E4 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				F6CF40D22018716400642F9A /* GroupsViewController.swift */,
 				F67BC5D4202EB7EB008979E4 /* GroupTableViewCell.swift */,
 				F657FEA9202EC2B10051FB6D /* CreateGroupViewController.swift */,
+				F657FEAB202EDAE50051FB6D /* ItemsViewController.swift */,
+				F657FEAD202EDAFE0051FB6D /* ItemTableViewCell.swift */,
+				F657FEAF202EE9E00051FB6D /* CreateItemViewController.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -311,10 +320,13 @@
 				F69B484F2022FD5400C26B1F /* ChartGroup.swift in Sources */,
 				F6CF40D32018716400642F9A /* GroupsViewController.swift in Sources */,
 				F6CF40CB20173B9600642F9A /* CTNavigationViewController.swift in Sources */,
+				F657FEAE202EDAFE0051FB6D /* ItemTableViewCell.swift in Sources */,
 				F6CF40B220172CAE00642F9A /* ViewController.swift in Sources */,
 				F657FEAA202EC2B10051FB6D /* CreateGroupViewController.swift in Sources */,
 				F67BC5D1202E9821008979E4 /* ChartCell.swift in Sources */,
+				F657FEB0202EE9E00051FB6D /* CreateItemViewController.swift in Sources */,
 				F69B48512023032100C26B1F /* Managed.swift in Sources */,
+				F657FEAC202EDAE50051FB6D /* ItemsViewController.swift in Sources */,
 				F6CF40D62018741200642F9A /* Charting.xcdatamodeld in Sources */,
 				F6CF40B020172CAE00642F9A /* AppDelegate.swift in Sources */,
 			);
