@@ -7,17 +7,20 @@ PODS:
     - MarqueeLabel/Swift
     - SnapKit (~> 4.0)
   - SnapKit (4.0.0)
+  - SwiftDate (4.5.1)
 
 DEPENDENCIES:
   - Charts (~> 3.0)
   - NotificationBannerSwift (~> 1.0)
+  - SwiftDate (~> 4.0)
 
 SPEC CHECKSUMS:
   Charts: 0705898046257443f0afbbc3179f4b67507b6e48
   MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
   NotificationBannerSwift: 1fc2955381e6eb26d958ba32160fc41721b9b689
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 48f0b9405a84e1bdc5894eb274757a05d5177a7e
+PODFILE CHECKSUM: 509ccc074f88df2bc176188fe107511edad18f9f
 
 COCOAPODS: 1.4.0
