@@ -86,7 +86,6 @@ class TimeLineChartViewController: UIViewController {
         for i in 0..<section.numberOfObjects {
             let cell = fetchedResultsController.object(at: IndexPath(row: i, section: 0))
             let entry = ChartDataEntry(x: Double(i), y: cell.number)
-            print(cell)
             values.append(entry)
         }
         

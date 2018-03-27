@@ -23,6 +23,6 @@ class ChartCellTableViewCell: UITableViewCell {
 
     func configure(for cell: ChartCell) {
         textLabel?.text = "\(cell.number)"
-        detailTextLabel?.text = cell.createDate.string(for: .yyyyMMddHHmmss)
+        detailTextLabel?.text = cell.date.string(for: .yyyyMMdd)
     }
 }

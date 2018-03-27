@@ -11,17 +11,15 @@ import UIKit
 class CreateChartCellViewController: UITableViewController {
 
     @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var item: ChartItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        dateLabel.text = datePicker.date.string(for: .yyyyMMdd)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,12 +33,20 @@ class CreateChartCellViewController: UITableViewController {
         }
         numberTextField.resignFirstResponder()
         self.managedObjectContext.performChanges {
-            let _ = ChartCell.insert(into: self.managedObjectContext, number: number, item: self.item)
+            let _ = ChartCell.insert(into: self.managedObjectContext, number: number, date: self.datePicker.date, item: self.item)
             self.navigationController?.popViewController(animated: true)
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        datePicker.isHidden = !datePicker.isHidden
+        tableView.endUpdates()
+    }
 
+    @IBAction func datepickerValueChanged(_ sender: UIDatePicker) {
+        dateLabel.text = datePicker.date.string(for: .yyyyMMdd)
+    }
     /*
     // MARK: - Navigation
 
